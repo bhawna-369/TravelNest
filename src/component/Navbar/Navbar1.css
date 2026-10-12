@@ -1,0 +1,102 @@
+/* Glassmorphism Navigation Container Styling */
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Brand Link Container Wrapper */
+.brand-wrapper {
+  text-decoration: none !important;
+  transition: transform 0.2s ease;
+}
+
+.brand-wrapper:hover {
+  transform: scale(1.02);
+}
+
+/* Made the logo image taller and cleaner */
+.navbar-logo-img {
+  height: 48px; /* Increased from 38px */
+  width: auto;
+  object-fit: contain;
+}
+
+/* High-end Brand Text Styling next to the logo */
+.navbar-brand-text {
+  font-size: 1.5rem; /* Bold display size */
+  font-weight: 800;
+  color: #1a1d20;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.navbar-brand-text span {
+  color: #0d6efd; /* TravelNest 'Nest' Highlight */
+}
+
+/* Premium Link Micro-animations */
+.nav-custom-link {
+  color: #495057 !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 14px !important;
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.25s ease !important;
+  text-align: center;
+}
+
+.nav-custom-link:hover {
+  color: #0d6efd !important;
+  background-color: rgba(13, 110, 253, 0.06);
+}
+
+.nav-custom-link.active {
+  color: #0d6efd !important;
+  background-color: rgba(13, 110, 253, 0.08);
+}
+
+/* Modern Action CTA Button */
+.btn-login-pill {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  color: #ffffff;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  letter-spacing: 0.3px;
+}
+
+.btn-login-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3) !important;
+  background: linear-gradient(135deg, #1175ff 0%, #0b63e6 100%);
+}
+
+/* Responsive Hamburger Override Styles */
+.navbar-toggler {
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Mobile Screen Specific Optimizations */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #ffffff;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+  }
+  
+  .nav-custom-link {
+    padding: 12px 20px !important;
+    border-radius: 8px;
+  }
+  
+  .navbar-brand-text {
+    font-size: 1.35rem; /* Slightly smaller text for compact mobile layout */
+  }
+}
