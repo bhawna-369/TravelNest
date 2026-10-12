@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TripForm from "../../component/TripSummary/tripForm";
-import TripSummary from "../../component/TripSummary/TripSummary";
+import TripSummary from "../../component/Tripsummary/TripSummary";
 
 export const Plantrip = () => {
   const [tripData, setTripData] = useState(null);
